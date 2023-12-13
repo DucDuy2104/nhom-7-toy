@@ -1,9 +1,7 @@
 package com.example.myapp;
 
 public class LoaiMoHinh {
-    private int maLmh; //mã loại mô hình
-    private String tenLoai; // tên loại
-    private String imgUri; // đường dẫn của ảnh
+    private ing imgUri; // đường dẫn của ảnh
 
     private boolean isXemTatCa = false;
 
