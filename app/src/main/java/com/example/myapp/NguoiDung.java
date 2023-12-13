@@ -1,16 +1,7 @@
 package com.example.myapp;
 
 public class NguoiDung {
-
-    public void setEmailNd(String emailNd) {
-        this.emailNd = emailNd;
-    }
-
-    public String getDiaChiNd() {
-        return diaChiNd;
-    }
-
-    public void setDiaChiNd(String diaChiNd) {
+lic void setDiaChiNd(String diaChiNd) {
         this.diaChiNd = diaChiNd;
     }
 
