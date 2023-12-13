@@ -1,15 +1,7 @@
 package com.example.myapp;
 
 public class LoaiMoHinh {
-    c String getTenLoai() {
-        return tenLoai;
-    }
-
-    public void setTenLoai(String tenLoai) {
-        this.tenLoai = tenLoai;
-    }
-
-    public String getImgUri() {
+    c StString getImgUri() {
         return imgUri;
     }
 
