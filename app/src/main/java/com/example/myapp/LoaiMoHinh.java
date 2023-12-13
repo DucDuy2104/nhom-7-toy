@@ -2,11 +2,7 @@ package com.example.myapp;
 
 public class LoaiMoHinh {
     private ing imgUri; // đường dẫn của ảnh
-
-    private boolean isXemTatCa = false;
-
-
-    public boolean getIsXemTatCa() {
+c boolean getIsXemTatCa() {
         return isXemTatCa;
     }
 
