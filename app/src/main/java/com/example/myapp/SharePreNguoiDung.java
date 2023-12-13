@@ -7,11 +7,6 @@ import android.content.SharedPreferences;
 public class SharePreNguoiDung {
     priva
 
-    public void setMaNd(int mand) {
-        editor.putInt("mand", mand);
-        editor.apply();
-    }
-
     public int getMaNd() {
         return sharedPreferences.getInt("mand", -1);
     }
