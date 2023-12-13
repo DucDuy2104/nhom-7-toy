@@ -31,10 +31,6 @@ import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-    private FrameLayout frameLayout;
-    private NavigationView navigationView;
-    private DrawerLayout drawerLayout;
 
     private int mand;
     private SharePreNguoiDung sharePreNguoiDung;
