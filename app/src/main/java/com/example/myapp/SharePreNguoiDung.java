@@ -5,13 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharePreNguoiDung {
-    private ContPreferences.Editor editor;
-
-    public SharePreNguoiDung(Context context) {
-        this.context = context;
-        this.sharedPreferences = ((Activity)context).getSharedPreferences("stoy",Context.MODE_PRIVATE);
-        this.editor = sharedPreferences.edit();
-    }
+    priva
 
     public void setMaNd(int mand) {
         editor.putInt("mand", mand);
