@@ -5,15 +5,7 @@ public class LoaiMoHinh {
 c boolean getIsXemTatCa() {
         return isXemTatCa;
     }
-
-    public void setIsXemTatCa(boolean isXemTatCa) {
-        this.isXemTatCa = isXemTatCa;
-    }
-
-    public LoaiMoHinh() {
-    }
-
-    public LoaiMoHinh(String tenLoai, String imgUri) {
+aiMoHinh(String tenLoai, String imgUri) {
         this.tenLoai = tenLoai;
         this.imgUri = imgUri;
     }
