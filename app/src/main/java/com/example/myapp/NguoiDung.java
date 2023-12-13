@@ -2,15 +2,6 @@ package com.example.myapp;
 
 public class NguoiDung {
 
-
-    public void setSdtNd(String sdtNd) {
-        this.sdtNd = sdtNd;
-    }
-
-    public String getEmailNd() {
-        return emailNd;
-    }
-
     public void setEmailNd(String emailNd) {
         this.emailNd = emailNd;
     }
