@@ -5,12 +5,7 @@ public class LoaiMoHinh {
 c boolean getIsXemTatCa() {
         return isXemTatCa;
     }
-aiMoHinh(String tenLoai, String imgUri) {
-        this.tenLoai = tenLoai;
-        this.imgUri = imgUri;
-    }
-
-    public int getMaLmh() {
+aiMoHi int getMaLmh() {
         return maLmh;
     }
 
