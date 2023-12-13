@@ -5,14 +5,6 @@ lic void setDiaChiNd(String diaChiNd) {
         this.diaChiNd = diaChiNd;
     }
 
-    public String getTenDn() {
-        return tenDn;
-    }
-
-    public void setTenDn(String tenDn) {
-        this.tenDn = tenDn;
-    }
-
     public String getMatKhau() {
         return matKhau;
     }
