@@ -1,9 +1,7 @@
 package com.example.myapp;
 
 public class NguoiDung {
-    private int idNd; // mã người dùng
-    private String tenNd, gioiTinhNd, ngaySinhNd, sdtNd, emailNd, diaChiNd, tenDn, matKhau,imageUri;
-    // tên người dùng, giới tính, ngày sinh, số điện thoại, email, dịa chỉ, tên đăng nhập, mật khẩu, đường dẫn ảnh
+    p dùng, giới tính, ngày sinh, số điện thoại, email, dịa chỉ, tên đăng nhập, mật khẩu, đường dẫn ảnh
     private int role;
 
     public NguoiDung(String tenNd, String gioiTinhNd, String ngaySinhNd, String sdtNd, String emailNd, String diaChiNd, String tenDn, String matKhau, String imageUri, int role) {
