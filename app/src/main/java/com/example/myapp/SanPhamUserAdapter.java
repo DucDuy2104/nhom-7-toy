@@ -1,6 +1,9 @@
 package com.example.myapp;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +29,24 @@ public class SanPhamUserAdapter extends RecyclerView.Adapter<SanPhamUserAdapter.
         ImageView imgSp;
         TextView tvNameSp, tvPriceSp, tvRating;
         Button btnDetail;
+        @Override
+        public void onBindViewHolder(@NonNull SanPhamUserViewHolder holder, int position) {
+            MoHinh moHinh = moHinhList.get(position);
+            Glide.with(context).load(moHinh.getImgUri()).into(holder.imgSp);
+            holder.tvNameSp.setText(moHinh.getTenMh());
+            holder.tvPriceSp.setText(CurrencyConvert.convertFromFloatToVNCurrency(moHinh.getGiaBan()));
+            holder.tvRating.setText(moHinh.getDanhGia() + "");
+            holder.btnDetail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent  = new Intent(context, SanPhamDetailActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("mamh",moHinh.getMaMh());
+                    intent.putExtras(bundle);
+                    ((Activity)context).startActivity(intent);
+                }
+            });
+        }
 
         @Override
         public int getItemCount() {
