@@ -1,8 +1,7 @@
 package com.example.myapp;
 
 public class NguoiDung {
-    p dùng, giới tính, ngày sinh, số điện thoại, email, dịa chỉ, tên đăng nhập, mật khẩu, đường dẫn ảnh
-    private int role;
+
 
 
 
