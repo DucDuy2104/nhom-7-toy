@@ -48,6 +48,18 @@ public class SanPhamUserAdapter extends RecyclerView.Adapter<SanPhamUserAdapter.
             });
         }
 
+        public SanPhamUserAdapter(Context context, List<MoHinh> moHinhList) {
+            this.context = context;
+            this.moHinhList = moHinhList;
+        }
+
+        @NonNull
+        @Override
+        public SanPhamUserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(context).inflate(R.layout.item_sam_pham_user, parent,false);
+            return new SanPhamUserViewHolder(view);
+        }
+
         @Override
         public int getItemCount() {
             return moHinhList.size();
