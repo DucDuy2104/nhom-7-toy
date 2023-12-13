@@ -1,19 +1,7 @@
 package com.example.myapp;
 
 public class LoaiMoHinh {
-    private ing imgUri; // đường dẫn của ảnh
-c boolean getIsXemTatCa() {
-        return isXemTatCa;
-    }
-aiMoHi int getMaLmh() {
-        return maLmh;
-    }
-
-    public void setMaLmh(int maLmh) {
-        this.maLmh = maLmh;
-    }
-
-    public String getTenLoai() {
+    c String getTenLoai() {
         return tenLoai;
     }
 
