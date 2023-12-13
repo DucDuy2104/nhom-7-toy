@@ -4,16 +4,7 @@ public class NguoiDung {
 lic void setDiaChiNd(String diaChiNd) {
         this.diaChiNd = diaChiNd;
     }
-
-    public String getMatKhau() {
-        return matKhau;
-    }
-
-    public void setMatKhau(String matKhau) {
-        this.matKhau = matKhau;
-    }
-
-    public String getImageUri() {
+ String getImageUri() {
         return imageUri;
     }
 
