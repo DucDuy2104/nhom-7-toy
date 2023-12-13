@@ -4,13 +4,7 @@ public class NguoiDung {
     p dùng, giới tính, ngày sinh, số điện thoại, email, dịa chỉ, tên đăng nhập, mật khẩu, đường dẫn ảnh
     private int role;
 
-    publ emailNd;
-        this.diaChiNd = diaChiNd;
-        this.tenDn = tenDn;
-        this.matKhau = matKhau;
-        this.imageUri = imageUri;
-        this.role = role;
-    }
+
 
     public int getRole() {
         return role;
