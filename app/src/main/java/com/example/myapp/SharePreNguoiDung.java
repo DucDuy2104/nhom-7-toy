@@ -5,9 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharePreNguoiDung {
-    private Context context;
-    private SharedPreferences sharedPreferences;
-    private SharedPreferences.Editor editor;
+    private ContPreferences.Editor editor;
 
     public SharePreNguoiDung(Context context) {
         this.context = context;
