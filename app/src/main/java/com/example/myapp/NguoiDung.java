@@ -4,17 +4,6 @@ public class NguoiDung {
 
 
 
-    public String getGioiTinhNd() {
-        return gioiTinhNd;
-    }
-
-    public void setGioiTinhNd(String gioiTinhNd) {
-        this.gioiTinhNd = gioiTinhNd;
-    }
-
-    public String getNgaySinhNd() {
-        return ngaySinhNd;
-    }
 
     public void setNgaySinhNd(String ngaySinhNd) {
         this.ngaySinhNd = ngaySinhNd;
