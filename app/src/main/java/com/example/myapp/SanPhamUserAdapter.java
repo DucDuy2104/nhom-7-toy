@@ -26,6 +26,12 @@ public class SanPhamUserAdapter extends RecyclerView.Adapter<SanPhamUserAdapter.
         ImageView imgSp;
         TextView tvNameSp, tvPriceSp, tvRating;
         Button btnDetail;
+
+        @Override
+        public int getItemCount() {
+            return moHinhList.size();
+        }
+
         public SanPhamUserViewHolder(@NonNull View itemView) {
             super(itemView);
             imgSp = itemView.findViewById(R.id.img_itemSanPhamUser);
