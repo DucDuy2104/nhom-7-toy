@@ -3,15 +3,6 @@ package com.example.myapp;
 public class NguoiDung {
 
 
-
-
-
-    }
-
-    public int getIdNd() {
-        return idNd;
-    }
-
     public void setIdNd(int idNd) {
         this.idNd = idNd;
     }
