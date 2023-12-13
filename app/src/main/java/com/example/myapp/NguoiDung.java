@@ -3,16 +3,6 @@ package com.example.myapp;
 public class NguoiDung {
 
 
-
-
-    public void setNgaySinhNd(String ngaySinhNd) {
-        this.ngaySinhNd = ngaySinhNd;
-    }
-
-    public String getSdtNd() {
-        return sdtNd;
-    }
-
     public void setSdtNd(String sdtNd) {
         this.sdtNd = sdtNd;
     }
