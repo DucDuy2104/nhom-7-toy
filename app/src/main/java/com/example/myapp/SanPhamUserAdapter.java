@@ -16,10 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.duanmau1.GroupFunction.CurrencyConvert;
-import com.example.duanmau1.R;
-import com.example.duanmau1.customer.activity.SanPhamDetailActivity;
-import com.example.duanmau1.model.MoHinh;
+import com.example.myapp.R;
+import com.example.myapp.MoHinh;
 import com.example.myapp.MoHinh;
 
 import java.util.List;
