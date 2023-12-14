@@ -21,13 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HoaDonDao {
-    public  interface  OnGetListHoaDon {
-        void onGetSuccess(List<HoaDon> hoaDonList);
-    }
 
-    public interface  OnGetHoaDon {
-        void onGetSuccess(HoaDon hoaDon);
-    }
 
     public interface OnGetHoaDonListByStatus {
         void onGetSuccess(List<HoaDon> listHoaDonOnGoing, List<HoaDon> listHoaDonGone, List<HoaDon> listHoaDonCancel);
