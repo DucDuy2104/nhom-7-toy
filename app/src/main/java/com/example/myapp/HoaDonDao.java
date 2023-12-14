@@ -22,21 +22,7 @@ import java.util.List;
 
 public class HoaDonDao {
 
-
-
-                CustomToast customToast   = new CustomToast(context, CustomToast.SUCCESS, "Đặt hàng thành công!");
-                customToast.showToast();
-            }
-        });
-    }
-
-    public void deleteHoaDon(int mahd, int mand) {
-        Log.e("ducduy", "deleteHoaDon: onStart");
-        dbReference.child("list_hoa_don_user_" +mand)
-                .child("hoa_don_user_" +mahd).removeValue()
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
+s(Void unused) {
                         Log.e("ducduy", "onSuccess: deleted hd: " + mahd + " of user: "  + mand);
                     }
                 });
