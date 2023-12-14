@@ -263,18 +263,5 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         tvTitle.setText("CẢNH BÁO");
         tvMess.setText("!!! Xóa mô hình, các hóa đơn liên quan đến mô hình sẽ bị xóa !!!");
 
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
-        btnConFirm.setOnClickListener(new View.OnClickListener() {
-
-        });
-        dialog.show();
-    }
-
 
 }
