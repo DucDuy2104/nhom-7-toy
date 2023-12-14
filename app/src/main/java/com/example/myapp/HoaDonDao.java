@@ -20,13 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-    public void confirmBill(int mand, int mahd) {
-
-        moHinhDao = new MoHinhDao(context);
-        dbReference.child("list_hoa_don_user_" +mand)
-                .child("hoa_don_user_" +mahd)
-                .child("tinhTrang")
-                .setValue(1);
 
         getHoaDonByMahd(mahd, mand, new OnGetHoaDon() {
             @Override
