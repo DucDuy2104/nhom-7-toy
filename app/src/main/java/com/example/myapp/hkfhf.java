@@ -187,16 +187,4 @@ public class DetailMoHinhActivity extends AppCompatActivity {
                 tvType.setText(loaiMoHinh.getTenLoai());
                 tvMaterial.setText(moHinh.getChatLieu());
                 tvRatio.setText(moHinh.getTiLe());
-                tvHeight.setText(moHinh.getChieuCao() +"cm");
-                tvRemaining.setText((moHinh.getSoLuong() - moHinh.getSoLuongDaBan()) + "");
-                tvDate.setText(moHinh.getNgaySx());
-                tvSex.setText(moHinh.getGioiTinh());
-                tvAgeLimit.setText(moHinh.getGioiHanDoTuoi()+"");
-                tvOrigin.setText(moHinh.getXuatXu());
-            }
-        });
-    }
-
-    private void initView() {
-        tvName = findViewById(R.id.tv_nameDetailSpAdmin);
-        tv
+                tvHeight.setText(moHinh.getChieuCao() +"cm")
