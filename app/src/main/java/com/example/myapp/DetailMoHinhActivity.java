@@ -31,13 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
 
-    private void setOnViewClicked() {
-        btnExit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
