@@ -31,12 +31,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
 
-
-
     private void setView() {
-        nguoiDungDao = new NguoiDungDao(this);
-        sharePreNguoiDung = new SharePreNguoiDung(this);
-        mand = sharePreNguoiDung.getMaNd();
 
         nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
             @Override
