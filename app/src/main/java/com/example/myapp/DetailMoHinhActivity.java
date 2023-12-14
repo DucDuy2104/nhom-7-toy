@@ -31,8 +31,6 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showDialogDelete(int maMh, String tenMh) {
-ss.setText("Bạn có chắc chắn muốn xóa " + tenMh);
-
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
