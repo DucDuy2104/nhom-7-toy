@@ -36,14 +36,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
 
-        btnConFirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        dialog.show();
-    }
 
     private void getData() {
         moHinhDao = new MoHinhDao(this);
