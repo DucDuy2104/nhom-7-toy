@@ -30,10 +30,6 @@ import com.example.duanmau1.sign.SignInActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
-
-
-    private  TextView tvName, tvEmail;
-    private ImageView imgUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
