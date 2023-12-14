@@ -28,18 +28,7 @@ import java.util.List;
 
 
 
-                @Override
-                            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                                storageReference.child("img_mo_hinh_" + moHinh.getMaMh()).getDownloadUrl()
-                                        .addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                            @Override
-                                            public void onSuccess(Uri uri) {
-                                                moHinh.setImgUri(uri.toString());
-                                                dbReference.child("mo_hinh_" + moHinh.getMaMh()).setValue(moHinh)
-                                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                            @Override
-                                                            public void onSuccess(Void unused) {
-                                                                CustomToast customToast = new CustomToast(context, CustomToast.SUCCESS, "Add successfully!");
+               st customToast = new CustomToast(context, CustomToast.SUCCESS, "Add successfully!");
                                                                 customToast.showToast();
                                                                 progressDialog.dismiss();
                                                             }
@@ -50,17 +39,7 @@ import java.util.List;
                                                                 CustomToast customToast = new CustomToast(context, CustomToast.ERROR, "Failure!");
                                                                 customToast.showToast();
                                                                 progressDialog.dismiss();
-                                                            }
-                                                        });
 
-
-                                            }
-                                        });
-                            }
-                        });
-            }
-        });
-    }
 
     public void updateMoHinh(MoHinh moHinh) {
         dbReference.child("mo_hinh_" + moHinh.getMaMh()).setValue(moHinh);
