@@ -51,10 +51,7 @@ public class AdminActivity extends AppCompatActivity {
                 nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
                     @Override
                     public void onGetNdSuccess(NguoiDung nguoiDung) {
-                        if (!pass.trim().equals(nguoiDung.getMatKhau())) {
-                            Toast.makeText(AdminActivity.this, "Sai mật khẩu!", Toast.LENGTH_SHORT).show();
-                            return;
-                        } else if (!newPass.trim().equals(rePass)) {
+                        i if (!newPass.trim().equals(rePass)) {
                             Toast.makeText(AdminActivity.this, "Mật khẩu mới không khớp!", Toast.LENGTH_SHORT).show();
                             return;
                         }else  {
