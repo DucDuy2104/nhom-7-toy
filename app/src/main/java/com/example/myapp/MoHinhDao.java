@@ -25,13 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MoHinhDao {
-
-
-
-    public interface OnGetMoHinhSuccess {
-        void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh);
-    }
-
     public interface OnCountMoHinh{
         void onCountComplete(int count);
     }
