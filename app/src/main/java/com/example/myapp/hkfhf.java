@@ -283,10 +283,5 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private void getData() {
-        moHinhDao = new MoHinhDao(this);
-        Intent intent  = getIntent();
-        mamh = intent.getExtras().getInt("mamh", -1);
-    }
 
 }
