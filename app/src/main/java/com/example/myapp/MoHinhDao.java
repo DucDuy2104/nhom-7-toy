@@ -28,19 +28,7 @@ import java.util.List;
 
 
 
-                if (moHinhList.size() > 0) {
-                    int maxMamh = 0;
-                    for (MoHinh moHinh1:moHinhList) {
-                        if (moHinh1.getMaMh() > maxMamh) {
-                            maxMamh = moHinh1.getMaMh();
-                        }
-                    }
-                    mamh = maxMamh + 1;
-                }
-                moHinh.setMaMh(mamh);
-                storageReference.child("img_mo_hinh_" + moHinh.getMaMh()).putFile(Uri.parse(moHinh.getImgUri()))
-                        .addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
-                            @Override
+                @Override
                             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
                                 storageReference.child("img_mo_hinh_" + moHinh.getMaMh()).getDownloadUrl()
                                         .addOnSuccessListener(new OnSuccessListener<Uri>() {
