@@ -29,10 +29,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
-    TextView tvName, tvRating, tvPrice, tvAmount, tvSold, tvType, tvMaterial, tvRatio,
-    tvHeight, tvRemaining, tvDate, tvSex, tvAgeLimit, tvOrigin;
-    Button btnUpdate, btnExit, btnDelete;
-    ImageView img;
+
     int mamh;
     MoHinhDao moHinhDao;
     @Override
