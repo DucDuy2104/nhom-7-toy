@@ -32,12 +32,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showDialogDelete(int maMh, String tenMh) {
 
-
-        ImageButton btnCancel = viewDialog.findViewById(R.id.btn_closeWarningDialog);
-        Button btnConFirm = viewDialog.findViewById(R.id.btn_conFirmWarningDialog);
-        TextView tvTitle = viewDialog.findViewById(R.id.tv_titleWarningDialog);
-        TextView tvMess = viewDialog.findViewById(R.id.tv_messageWarningDialog);
-
         tvTitle.setText(tenMh);
         tvMess.setText("Bạn có chắc chắn muốn xóa " + tenMh);
 
