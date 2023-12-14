@@ -31,10 +31,6 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void initView() {
-
-        tvAgeLimit = findViewById(R.id.tv_ageDetailSpAdmin);
-        tvOrigin = findViewById(R.id.tv_originDetailSpAdmin);
-        btnUpdate =findViewById(R.id.btn_updateDetailAdmin);
         btnDelete = findViewById(R.id.btn_deleteDetailSpAdmin);
         btnExit = findViewById(R.id.btn_exitDetailSpAdmin);
         img = findViewById(R.id.img_moHinhDetailMhAdmin);
