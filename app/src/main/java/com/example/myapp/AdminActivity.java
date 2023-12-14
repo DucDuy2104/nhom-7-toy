@@ -33,11 +33,6 @@ public class AdminActivity extends AppCompatActivity {
 
     private void setView() {
 
-        //set ToolBar
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_menu_24);
-
         //set first Fragment
         getSupportFragmentManager()
                 .beginTransaction()
