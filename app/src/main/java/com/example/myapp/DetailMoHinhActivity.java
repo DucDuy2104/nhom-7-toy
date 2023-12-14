@@ -30,11 +30,6 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-    private void setView() {
-
-
-    }
-
     private void initView() {
         tvName = findViewById(R.id.tv_nameDetailSpAdmin);
         tvRating = findViewById(R.id.tv_ratingDetailSpAdmin);
