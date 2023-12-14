@@ -36,11 +36,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
 
-         void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
         btnConFirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
