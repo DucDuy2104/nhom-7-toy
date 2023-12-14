@@ -33,14 +33,7 @@ public class AdminActivity extends AppCompatActivity {
 
 
     private void initView() {
-        toolbar = findViewById(R.id.tb_adminAct);
-        frameLayout = findViewById(R.id.frLayout_adminAct);
-        navigationView = findViewById(R.id.drawerNav_adminAct);
-        drawerLayout =findViewById(R.id.drawerLayout_adminAct);
-        tvName = navigationView.getHeaderView(0).findViewById(R.id.tv_nameHeaderNav);
-        tvEmail = navigationView.getHeaderView(0).findViewById(R.id.tv_emailHeaderNav);
-        imgUser = navigationView.getHeaderView(0).findViewById(R.id.img_headerNav);
-    }
+
 
     private void setView() {
         nguoiDungDao = new NguoiDungDao(this);
