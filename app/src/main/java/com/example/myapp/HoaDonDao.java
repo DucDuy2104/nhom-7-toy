@@ -20,21 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-                        hoaDonListOnGoing.add(hoaDon);
-                    } else if (hoaDon.getTinhTrang() == 1) {
-                        hoaDonListGone.add(hoaDon);
-                    } else {
-                        hoaDonListCancel.add(hoaDon);
-                    }
-                }
-                onGetHoaDonListByStatus.onGetSuccess(hoaDonListOnGoing, hoaDonListGone,hoaDonListCancel);
-            }
-        });
-    }
-
-    public void cancelBill(int mand, int mahd) {
-        dbReference.child("list_hoa_don_user_" +mand)
-                .child("hoa_don_user_" +mahd)
                 .child("tinhTrang")
                 .setValue(-1);
         CustomToast customToast = new CustomToast(context, CustomToast.SUCCESS, "Hủy thành công");
