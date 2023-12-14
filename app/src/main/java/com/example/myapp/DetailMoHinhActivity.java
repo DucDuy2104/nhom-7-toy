@@ -37,10 +37,5 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
 
 
-    private void getData() {
-        moHinhDao = new MoHinhDao(this);
-        Intent intent  = getIntent();
-        mamh = intent.getExtras().getInt("mamh", -1);
-    }
 
 }
