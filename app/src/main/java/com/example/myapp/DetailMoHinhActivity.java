@@ -31,10 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showDialogDelete(int maMh, String tenMh) {
-        View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_warning, null);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setView(viewDialog);
-        AlertDialog dialog = builder.create();
+
 
         ImageButton btnCancel = viewDialog.findViewById(R.id.btn_closeWarningDialog);
         Button btnConFirm = viewDialog.findViewById(R.id.btn_conFirmWarningDialog);
