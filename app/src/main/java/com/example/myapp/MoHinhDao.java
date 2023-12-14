@@ -25,9 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MoHinhDao {
-    private ProgressDialog progressDialog;
-    private DatabaseReference dbReference;
-    private StorageReference storageReference;
+    pence storageReference;
     private LoaiMoHinhDao loaiMoHinhDao;
     private HoaDonChiTietDao hoaDonChiTietDao;
     private HoaDonDao hoaDonDao;
