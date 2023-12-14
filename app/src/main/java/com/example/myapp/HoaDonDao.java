@@ -21,16 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HoaDonDao {
-
-s(Void unused) {
-                        Log.e("ducduy", "onSuccess: deleted hd: " + mahd + " of user: "  + mand);
-        HoaDon hoaDon = dataSnapshot.getValue(HoaDon.class);
-                        onGetHoaDon.onGetSuccess(hoaDon);
-                    }
-                });
-    }
-
-    public void getListHoaDonByStatus(int mand, OnGetHoaDonListByStatus onGetHoaDonListByStatus) {
+onGetHoaDonListByStatus) {
         getAllHoaDonByMaNd(mand, new OnGetListHoaDon() {
             @Override
             public void onGetSuccess(List<HoaDon> hoaDonList) {
