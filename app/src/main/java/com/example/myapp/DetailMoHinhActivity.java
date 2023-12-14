@@ -35,12 +35,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog() {
 
-        bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        //mở rộng toàn bộ
-        BottomSheetBehavior<View> behavior = BottomSheetBehavior.from((View)viewBottomDialog.getParent());
-        behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-
-
         EditText edtName = viewBottomDialog.findViewById(R.id.edt_nameSpUpdateAdmin);
         EditText edtPrice = viewBottomDialog.findViewById(R.id.edt_priceSpUpdateAdmin);
         EditText edtMaterial = viewBottomDialog.findViewById(R.id.edt_materialSpUpadteAdmin);
