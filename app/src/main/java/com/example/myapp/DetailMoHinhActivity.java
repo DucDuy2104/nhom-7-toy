@@ -34,12 +34,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
 
     private void showBottomSheetDialog() {
-        ext(moHinh.getChieuCao()+"");
-                edtDate.setText(moHinh.getNgaySx());
-                edtAgeLimit.setText(moHinh.getGioiHanDoTuoi()+"");
-                edtOrigin.setText(moHinh.getXuatXu());
-                edtDate.setFocusable(false);
-                edtDate.setFocusableInTouchMode(false);
+
 
                 edtDate.setOnClickListener(new View.OnClickListener() {
                     @Override
