@@ -26,12 +26,7 @@ import java.util.List;
 
 
 
-    public void addMoHinh(MoHinh moHinh) {
-        progressDialog.show();
-        getAllMoHinh(new OnGetListMoHinhSuccess() {
-            @Override
-            public void onGetSuccess(List<MoHinh> moHinhList) {
-                int mamh = 0;
+
 
                 if (moHinhList.size() > 0) {
                     int maxMamh = 0;
