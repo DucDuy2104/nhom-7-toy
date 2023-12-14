@@ -31,10 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showSubDialog(int maMh) {
-        View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_error, null);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setView(viewDialog);
-        AlertDialog dialog = builder.create();
+
 
 
 
