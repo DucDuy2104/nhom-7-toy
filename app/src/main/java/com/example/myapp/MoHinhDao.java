@@ -24,21 +24,6 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-    g.e("ducduy", "deleteMoHinh: start" );
-
-        hoaDonDao = new HoaDonDao(context);
-        hoaDonChiTietDao = new HoaDonChiTietDao(context);
-        dbReference.child("mo_hinh_" + mamh).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                Log.e("ducduy", "onSuccess: deletedMohinhSuccess");
-                hoaDonDao.deleteAllHoaDonByMaMh(mamh);
-                hoaDonChiTietDao.deleteAllHdctByMaMh(mamh);
-            }
-        });
-        storageReference.child("img_mo_hinh_" + mamh).delete();
-    }
-
     public void getMoHinhById(int mamh, OnGetMoHinhSuccess onGetMoHinhSuccess) {
 
         loaiMoHinhDao = new LoaiMoHinhDao(context);
