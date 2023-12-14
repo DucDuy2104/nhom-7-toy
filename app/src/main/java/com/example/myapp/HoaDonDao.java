@@ -20,21 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-                .child("tinhTrang")
-                .setValue(-1);
-        CustomToast customToast = new CustomToast(context, CustomToast.SUCCESS, "Hủy thành công");
-        customToast.showToast();
-    }
-
-    public void reOrder(int mand, int mahd) {
-        dbReference.child("list_hoa_don_user_" +mand)
-                .child("hoa_don_user_" +mahd)
-                .child("tinhTrang")
-                .setValue(0);
-        CustomToast customToast = new CustomToast(context, CustomToast.SUCCESS, "Đặt thành công");
-        customToast.showToast();
-    }
-
     public void confirmBill(int mand, int mahd) {
 
         moHinhDao = new MoHinhDao(context);
