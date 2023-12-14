@@ -51,10 +51,7 @@ public class AdminActivity extends AppCompatActivity {
                 nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
                     @Override
                     public void onGetNdSuccess(NguoiDung nguoiDung) {
-                        i if (!newPass.trim().equals(rePass)) {
-                            Toast.makeText(AdminActivity.this, "Mật khẩu mới không khớp!", Toast.LENGTH_SHORT).show();
-                            return;
-                        }else  {
+                        {
                             nguoiDung.setMatKhau(newPass);
                             nguoiDungDao.updateNguoiDung(nguoiDung);
                             dialog.dismiss();
