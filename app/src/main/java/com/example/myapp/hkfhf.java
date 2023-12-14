@@ -257,11 +257,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
         ImageButton btnCancel = viewDialog.findViewById(R.id.btn_closeErrorDialog);
         Button btnConFirm = viewDialog.findViewById(R.id.btn_conFirmErrorDialog);
-        TextView tvTitle = viewDialog.findViewById(R.id.tv_titleErrorDialog);
-        TextView tvMess = viewDialog.findViewById(R.id.tv_messageErrorDialog);
-
-        tvTitle.setText("CẢNH BÁO");
-        tvMess.setText("!!! Xóa mô hình, các hóa đơn liên quan đến mô hình sẽ bị xóa !!!");
-
+        Text
 
 }
