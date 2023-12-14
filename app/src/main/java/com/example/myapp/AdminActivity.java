@@ -48,16 +48,7 @@ public class AdminActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
-                    @Override
-                    public void onGetNdSuccess(NguoiDung nguoiDung) {
-                        {
-                            nguoiDung.setMatKhau(newPass);
-                            nguoiDungDao.updateNguoiDung(nguoiDung);
-                            dialog.dismiss();
-                        }
-                    }
-                });
+
             }
         });
 
