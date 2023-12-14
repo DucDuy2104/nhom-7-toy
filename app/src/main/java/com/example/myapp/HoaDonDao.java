@@ -21,15 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-        getHoaDonByMahd(mahd, mand, new OnGetHoaDon() {
-            @Override
-            public void onGetSuccess(HoaDon hoaDon) {
-                for (HoaDonChiTiet hoaDonChiTiet: hoaDon.getHoaDonChiTietList()) {
-                    moHinhDao.updateSold(hoaDonChiTiet.getMaMh(), hoaDonChiTiet.getSoLuong());
-                    CustomToast customToast = new CustomToast(context, CustomToast.SUCCESS, "Đã xác nhận đơn hàng");
-                    customToast.showToast();
-                }
-            }
         });
     }
 
