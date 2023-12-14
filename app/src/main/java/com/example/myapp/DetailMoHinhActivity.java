@@ -31,12 +31,6 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showDialogDelete(int maMh, String tenMh) {
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
 
         btnConFirm.setOnClickListener(new View.OnClickListener() {
             @Override
