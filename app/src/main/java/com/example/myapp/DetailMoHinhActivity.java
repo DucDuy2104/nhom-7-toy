@@ -35,11 +35,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog() {
 
-
-                    public void onClick(View v) {
-                        DatePickerDialog datePickerDialog = new DatePickerDialog(
-                                DetailMoHinhActivity.this,
-                                new DatePickerDialog.OnDateSetListener() {
+ialog.OnDateSetListener() {
                                     @Override
                                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                                         // Xử lý ngày được chọn
