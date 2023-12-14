@@ -35,11 +35,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog() {
 
-        iewBottomDialog.findViewById(R.id.edt_ratioUpdateSpAdmin);
-        EditText edtHeight = viewBottomDialog.findViewById(R.id.edt_heightUpdateSpAdmin);
-        EditText edtDate = viewBottomDialog.findViewById(R.id.edt_dateUpdateSpAdmin);
-        EditText edtAgeLimit = viewBottomDialog.findViewById(R.id.edt_ageUpdateSpAdmin);
-        EditText edtOrigin = viewBottomDialog.findViewById(R.id.edt_originUpdateSpAdmin);
+         viewBottomDialog.findViewById(R.id.edt_originUpdateSpAdmin);
         Button btnUpdate = viewBottomDialog.findViewById(R.id.btn_updateSpAdmin);
         Button btnCancel = viewBottomDialog.findViewById(R.id.btn_cancelUpdateSpAdmin);
 
