@@ -30,12 +30,6 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-    private void initView() {
-        btnDelete = findViewById(R.id.btn_deleteDetailSpAdmin);
-        btnExit = findViewById(R.id.btn_exitDetailSpAdmin);
-        img = findViewById(R.id.img_moHinhDetailMhAdmin);
-    }
-
     private void showDialogDelete(int maMh, String tenMh) {
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_warning, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
