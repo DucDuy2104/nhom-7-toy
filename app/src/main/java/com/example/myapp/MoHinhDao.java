@@ -28,11 +28,6 @@ public class MoHinhDao {
 
 
 
-
-    public interface OnGetListMoHinhSuccess {
-        void onGetSuccess(List<MoHinh> moHinhList);
-    }
-
     public interface OnGetMoHinhSuccess {
         void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh);
     }
