@@ -22,15 +22,6 @@ import java.util.List;
 
 public class HoaDonDao {
 
-
-    public interface OnGetHoaDonListByStatus {
-        void onGetSuccess(List<HoaDon> listHoaDonOnGoing, List<HoaDon> listHoaDonGone, List<HoaDon> listHoaDonCancel);
-    }
-
-
-
-    public void getAllHoaDonByMaNd(int mand, OnGetListHoaDon onGetListHoaDon) {
-        dbReference.child("list_hoa_don_user_" +mand).get()
                 .addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
