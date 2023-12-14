@@ -32,11 +32,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void setView() {
 
-                tvSex.setText(moHinh.getGioiTinh());
-                tvAgeLimit.setText(moHinh.getGioiHanDoTuoi()+"");
-                tvOrigin.setText(moHinh.getXuatXu());
-            }
-        });
+
     }
 
     private void initView() {
