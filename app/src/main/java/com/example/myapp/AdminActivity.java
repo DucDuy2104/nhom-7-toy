@@ -30,11 +30,6 @@ import com.example.duanmau1.sign.SignInActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
-
-    private void setNavOnItemSelect() {
-
-    }
-
     private void setDialog() {
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_change_pass, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
