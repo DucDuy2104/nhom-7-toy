@@ -33,11 +33,6 @@ public class AdminActivity extends AppCompatActivity {
 
     private void setView() {
 
-
-                tvName.setText(nguoiDung.getTenNd());
-                Glide.with(AdminActivity.this).load(Uri.parse(nguoiDung.getImageUri())).into(imgUser);
-            }
-        });
         //set ToolBar
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
