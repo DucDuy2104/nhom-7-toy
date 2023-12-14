@@ -46,9 +46,7 @@ public class AdminActivity extends AppCompatActivity {
         btnOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String pass = edtPass.getText().toString();
-                String newPass = edtNewPass.getText().toString();
-                String rePass = edtRePass.getText().toString();
+
 
                 nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
                     @Override
