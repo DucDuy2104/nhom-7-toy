@@ -36,10 +36,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
 
-
-        tvTitle.setText("CẢNH BÁO");
-        tvMess.setText("!!! Xóa mô hình, các hóa đơn liên quan đến mô hình sẽ bị xóa !!!");
-
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
