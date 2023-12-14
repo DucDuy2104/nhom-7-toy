@@ -21,25 +21,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
-
-    public void countMoHinhByLoai(int maLmh, OnCountMoHinh onCountMoHinh) {
-        getAllMoHinh(new OnGetListMoHinhSuccess() {
-            @Override
-            public void onGetSuccess(List<MoHinh> moHinhList) {
-                int count  = 0;
-                for (MoHinh moHinh: moHinhList){
-                    if (moHinh.getMaLmh() == maLmh) {
-                        count++;
-                    }
-                }
-                onCountMoHinh.onCountComplete(count);
-            }
-        });
-    }
+import java.util.ArrayList
 
     public void updateSold(int mamh,int soldAdd) {
         getMoHinhById(mamh, new OnGetMoHinhSuccess() {
