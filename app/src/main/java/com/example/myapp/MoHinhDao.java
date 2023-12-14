@@ -24,19 +24,7 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-    public void getAllMoHinh(OnGetListMoHinhSuccess onGetListMoHinhSuccess) {
-        List<MoHinh> moHinhList  = new ArrayList<>();
-        dbReference.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                for (DataSnapshot mhSnapshot: task.getResult().getChildren()) {
-                    MoHinh moHinh = mhSnapshot.getValue(MoHinh.class);
-                    moHinhList.add(moHinh);
-                }
-                onGetListMoHinhSuccess.onGetSuccess(moHinhList);
-            }
-        });
-    }
+
 
     public void addMoHinh(MoHinh moHinh) {
         progressDialog.show();
