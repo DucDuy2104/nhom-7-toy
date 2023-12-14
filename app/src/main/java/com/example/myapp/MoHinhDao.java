@@ -24,11 +24,6 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MoHinhDao {
-    public interface OnCountMoHinh{
-        void onCountComplete(int count);
-    }
-
     public void getAllMoHinh(OnGetListMoHinhSuccess onGetListMoHinhSuccess) {
         List<MoHinh> moHinhList  = new ArrayList<>();
         dbReference.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
