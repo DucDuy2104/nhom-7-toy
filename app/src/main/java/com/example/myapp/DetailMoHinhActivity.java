@@ -35,9 +35,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog() {
 
-         viewBottomDialog.findViewById(R.id.edt_originUpdateSpAdmin);
-        Button btnUpdate = viewBottomDialog.findViewById(R.id.btn_updateSpAdmin);
-        Button btnCancel = viewBottomDialog.findViewById(R.id.btn_cancelUpdateSpAdmin);
 
         moHinhDao.getMoHinhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
             @Override
