@@ -35,10 +35,7 @@ public class AdminActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                 else if (item.getItemId() == R.id.exit_drawerNav) {
-                    Intent intent = new Intent(AdminActivity.this, SignInActivity.class);
-                    startActivity(intent);
-                } else if (item.getItemId() == R.id.changePass_drawerNav) {
+                  if (item.getItemId() == R.id.changePass_drawerNav) {
                     setDialog();
                     drawerLayout.close();
                 }
