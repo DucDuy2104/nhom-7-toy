@@ -23,20 +23,6 @@ import java.util.List;
 
 
 
-                    getAllHoaDonByMaNd(nguoiDung.getIdNd(), new OnGetListHoaDon() {
-                        @Override
-                        public void onGetSuccess(List<HoaDon> hoaDonList) {
-                            for (HoaDon hoaDon: hoaDonList) {
-                                for (HoaDonChiTiet hoaDonChiTiet: hoaDon.getHoaDonChiTietList()) {
-                                    if (hoaDonChiTiet.getMaMh() == mamh) {
-                                        deleteHoaDon(hoaDon.getMaHd(), nguoiDung.getIdNd());
-                                    }
-                                }
-                            }
-                        }
-                    });
-                }
-            }
         });
     }
 
