@@ -29,14 +29,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
-
-
-
-
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                moHinhDao.getMoHinhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
+inhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
                     @Override
                     public void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh) {
                         showDialogDelete(moHinh.getMaMh(), moHinh.getTenMh());
