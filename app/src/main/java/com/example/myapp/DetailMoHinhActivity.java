@@ -36,8 +36,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
     private void showBottomSheetDialog() {
 
 
-                edtDate.setOnClickListener(new View.OnClickListener() {
-                    @Override
                     public void onClick(View v) {
                         DatePickerDialog datePickerDialog = new DatePickerDialog(
                                 DetailMoHinhActivity.this,
