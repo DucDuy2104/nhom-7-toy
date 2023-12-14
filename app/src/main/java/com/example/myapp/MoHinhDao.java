@@ -24,22 +24,7 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-    public void getMoHinhById(int mamh, OnGetMoHinhSuccess onGetMoHinhSuccess) {
 
-        loaiMoHinhDao = new LoaiMoHinhDao(context);
-        dbReference.child("mo_hinh_" + mamh).get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
-            @Override
-            public void onSuccess(DataSnapshot dataSnapshot) {
-                MoHinh moHinh  = dataSnapshot.getValue(MoHinh.class);
-                loaiMoHinhDao.getLoaiMoHinhById(moHinh.getMaLmh(), new LoaiMoHinhDao.OnGetLoaiSuccess() {
-                    @Override
-                    public void onGetLoaiSuccess(LoaiMoHinh loaiMoHinh) {
-                        onGetMoHinhSuccess.onGetSuccess(moHinh, loaiMoHinh);
-                    }
-                });
-            }
-        });
-    }
 
     public void countMoHinhByLoai(int maLmh, OnCountMoHinh onCountMoHinh) {
         getAllMoHinh(new OnGetListMoHinhSuccess() {
