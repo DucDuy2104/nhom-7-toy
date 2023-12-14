@@ -32,8 +32,6 @@ import com.google.android.material.navigation.NavigationView;
 public class AdminActivity extends AppCompatActivity {
 
 
-    private void initView() {
-
 
     private void setView() {
         nguoiDungDao = new NguoiDungDao(this);
