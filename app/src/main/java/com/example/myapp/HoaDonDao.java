@@ -24,17 +24,7 @@ public class HoaDonDao {
 
 s(Void unused) {
                         Log.e("ducduy", "onSuccess: deleted hd: " + mahd + " of user: "  + mand);
-                    }
-                });
-    }
-
-    public void getHoaDonByMahd(int mahd,  int mand, OnGetHoaDon onGetHoaDon) {
-        dbReference.child("list_hoa_don_user_" +mand)
-                .child("hoa_don_user_" +mahd).get()
-                .addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
-                    @Override
-                    public void onSuccess(DataSnapshot dataSnapshot) {
-                        HoaDon hoaDon = dataSnapshot.getValue(HoaDon.class);
+        HoaDon hoaDon = dataSnapshot.getValue(HoaDon.class);
                         onGetHoaDon.onGetSuccess(hoaDon);
                     }
                 });
