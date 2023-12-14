@@ -36,9 +36,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
 
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+         void onClick(View v) {
                 dialog.dismiss();
             }
         });
