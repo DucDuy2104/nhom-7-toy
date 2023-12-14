@@ -20,16 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HoaDonDao {
-onGetHoaDonListByStatus) {
-        getAllHoaDonByMaNd(mand, new OnGetListHoaDon() {
-            @Override
-            public void onGetSuccess(List<HoaDon> hoaDonList) {
-                List<HoaDon> hoaDonListOnGoing = new ArrayList<>();
-                List<HoaDon> hoaDonListGone = new ArrayList<>();
-                List<HoaDon> hoaDonListCancel = new ArrayList<>();
-                for (HoaDon hoaDon: hoaDonList) {
-                    if (hoaDon.getTinhTrang() == 0) {
                         hoaDonListOnGoing.add(hoaDon);
                     } else if (hoaDon.getTinhTrang() == 1) {
                         hoaDonListGone.add(hoaDon);
