@@ -23,20 +23,7 @@ import java.util.List;
 public class HoaDonDao {
 
 
-                if (hoaDonList.size() > 0){
-                    int mahdMax = 0;
-                    for (HoaDon hoaDon1 : hoaDonList) {
-                        if (hoaDon1.getMaHd() > mahdMax){
-                            mahdMax = hoaDon1.getMaHd();
-                        }
-                    }
-                    mahd = mahdMax + 1;
-                }
-                hoaDon.setMaHd(mahd);
-                dbReference.child("list_hoa_don_user_" +hoaDon.getMaNd())
-                        .child("hoa_don_user_" +mahd)
-                        .setValue(hoaDon);
-                progressDialog.dismiss();
+
                 CustomToast customToast   = new CustomToast(context, CustomToast.SUCCESS, "Đặt hàng thành công!");
                 customToast.showToast();
             }
