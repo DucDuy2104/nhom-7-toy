@@ -22,13 +22,7 @@ import java.util.List;
 
 
 
-    public void deleteAllHoaDonByMaMh(int mamh) {
-        Log.e("ducduy", "deleteAllHoaDonByMaMh: onStart" );
-        nguoiDungDao = new NguoiDungDao(context);
-        nguoiDungDao.getListNguoiDung(new NguoiDungDao.OnGetListSuccess() {
-            @Override
-            public void onGetListSuccess(List<NguoiDung> nguoiDungs) {
-                for (NguoiDung nguoiDung: nguoiDungs) {
+
                     getAllHoaDonByMaNd(nguoiDung.getIdNd(), new OnGetListHoaDon() {
                         @Override
                         public void onGetSuccess(List<HoaDon> hoaDonList) {
