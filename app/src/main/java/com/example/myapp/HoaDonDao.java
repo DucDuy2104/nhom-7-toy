@@ -22,14 +22,6 @@ import java.util.List;
 
 public class HoaDonDao {
 
-    }
-
-    public void addHoaDon(HoaDon hoaDon){
-        progressDialog.show();
-        getAllHoaDonByMaNd(hoaDon.getMaNd(), new OnGetListHoaDon() {
-            @Override
-            public void onGetSuccess(List<HoaDon> hoaDonList) {
-                int mahd = 0;
 
                 if (hoaDonList.size() > 0){
                     int mahdMax = 0;
