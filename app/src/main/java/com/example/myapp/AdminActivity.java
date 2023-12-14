@@ -33,10 +33,7 @@ public class AdminActivity extends AppCompatActivity {
 
     private void setView() {
 
-        nguoiDungDao.getNguoiDungById(mand, new NguoiDungDao.OnGetDataSuccess() {
-            @Override
-            public void onGetNdSuccess(NguoiDung nguoiDung) {
-                tvEmail.setText(nguoiDung.getEmailNd());
+
                 tvName.setText(nguoiDung.getTenNd());
                 Glide.with(AdminActivity.this).load(Uri.parse(nguoiDung.getImageUri())).into(imgUser);
             }
