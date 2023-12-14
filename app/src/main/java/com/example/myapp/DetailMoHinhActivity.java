@@ -33,16 +33,8 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
 
 
-    private void showBottomSheetDialog() {
+    private void showBottomSheetDialog()
 
-ialog.OnDateSetListener() {
-                                    @Override
-                                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                                        // Xử lý ngày được chọn
-                                        String selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
-                                        edtDate.setText(selectedDate);
-                                    }
-                                },
                                 // Thiết lập ngày mặc định khi mở dialog (năm, tháng, ngày)
                                 Calendar.getInstance().get(Calendar.YEAR),
                                 Calendar.getInstance().get(Calendar.MONTH),
