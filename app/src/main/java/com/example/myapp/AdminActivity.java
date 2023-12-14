@@ -32,16 +32,7 @@ import com.google.android.material.navigation.NavigationView;
 public class AdminActivity extends AppCompatActivity {
 
     private void setNavOnItemSelect() {
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                  if (item.getItemId() == R.id.changePass_drawerNav) {
-                    setDialog();
-                    drawerLayout.close();
-                }
-                return true;
-            }
-        });
+
     }
 
     @Override
