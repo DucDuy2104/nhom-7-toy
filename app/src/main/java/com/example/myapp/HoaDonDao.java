@@ -21,11 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HoaDonDao {
-    private ProgressDialog progressDialog;
-    private DatabaseReference dbReference;
-    private MoHinhDao moHinhDao;
-    private NguoiDungDao nguoiDungDao;
-    private Context context;
 
 
     public HoaDonDao(Context context) {
