@@ -30,14 +30,6 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-    ndle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_mo_hinh);
-        getData();
-        initView();
-        setView();
-        setOnViewClicked();
-    }
 
     private void setOnViewClicked() {
         btnExit.setOnClickListener(new View.OnClickListener() {
