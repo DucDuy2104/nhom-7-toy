@@ -35,14 +35,6 @@ public class AdminActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == android.R.id.home){
-            drawerLayout.openDrawer(GravityCompat.START);
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     private void setDialog() {
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_change_pass, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
