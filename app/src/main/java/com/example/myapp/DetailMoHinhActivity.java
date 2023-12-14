@@ -31,13 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
 
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showBottomSheetDialog();
-            }
-        });
-    }
+
 
     private void showBottomSheetDialog() {
         View viewBottomDialog = LayoutInflater.from(this).inflate(R.layout.dialog_update_sp, null);
