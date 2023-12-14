@@ -24,23 +24,6 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-
-
-               st customToast = new CustomToast(context, CustomToast.SUCCESS, "Add successfully!");
-                                                                customToast.showToast();
-                                                                progressDialog.dismiss();
-                                                            }
-                                                        })
-                                                        .addOnFailureListener(new OnFailureListener() {
-                                                            @Override
-                                                            public void onFailure(@NonNull Exception e) {
-                                                                CustomToast customToast = new CustomToast(context, CustomToast.ERROR, "Failure!");
-                                                                customToast.showToast();
-                                                                progressDialog.dismiss();
-
-
     public void updateMoHinh(MoHinh moHinh) {
         dbReference.child("mo_hinh_" + moHinh.getMaMh()).setValue(moHinh);
     }
