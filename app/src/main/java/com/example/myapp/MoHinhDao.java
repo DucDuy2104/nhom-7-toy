@@ -23,30 +23,3 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList
 
-    public void updateSold(int mamh,int soldAdd) {
-        getMoHinhById(mamh, new OnGetMoHinhSuccess() {
-            @Override
-            public void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh) {
-                dbReference.child("mo_hinh_" + moHinh.getMaMh()).child("soLuongDaBan")
-                        .setValue(moHinh.getSoLuongDaBan() + soldAdd);
-            }
-        });
-    }
-
-    public void deleteAllMoHinhByLoai(int maLmh){
-        Log.e("ducduy", "deleteAllMoHinhByLoai: start");
-        getAllMoHinh(new OnGetListMoHinhSuccess() {
-            @Override
-            public void onGetSuccess(List<MoHinh> moHinhList) {
-                for (MoHinh moHinh: moHinhList) {
-                    if (moHinh.getMaLmh() == maLmh) {
-                        deleteMoHinh(moHinh.getMaMh());
-                    }
-                }
-            }
-        });
-
-    }
-
-
-}
