@@ -32,13 +32,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showDialogDelete(int maMh, String tenMh) {
 
-        btnConFirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showSubDialog(maMh);
-                dialog.dismiss();
-            }
-        });
         dialog.show();
     }
 
