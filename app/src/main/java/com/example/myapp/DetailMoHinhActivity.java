@@ -31,12 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void initView() {
-        tvMaterial = findViewById(R.id.tv_materialDetailSpAdmin);
-        tvRatio = findViewById(R.id.tv_ratioDetailSpAdmin);
-        tvHeight = findViewById(R.id.tv_heightDetailSpAdmin);
-        tvRemaining = findViewById(R.id.tv_remainingDetailSpAdmin);
-        tvDate= findViewById(R.id.tv_dateDetailSpAdmin);
-        tvSex = findViewById(R.id.tv_sexDetailSpAdmin);
+
         tvAgeLimit = findViewById(R.id.tv_ageDetailSpAdmin);
         tvOrigin = findViewById(R.id.tv_originDetailSpAdmin);
         btnUpdate =findViewById(R.id.btn_updateDetailAdmin);
