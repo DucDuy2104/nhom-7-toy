@@ -30,12 +30,6 @@ import com.example.duanmau1.sign.SignInActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
-    private void setDialog() {
-
-        AlertDialog dialog = builder.create();
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
-    }
 
 
 }
