@@ -30,28 +30,7 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-                btnUpdate.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
 
-                        moHinh.setTenMh(name);
-                        moHinh.setGiaBan(price);
-                        moHinh.setChatLieu(material);
-                        moHinh.setTiLe(ratio);
-                        moHinh.setChieuCao(height);
-                        moHinh.setNgaySx(date);
-                        moHinh.setGioiHanDoTuoi(age);
-                        moHinh.setXuatXu(origin);
-
-                        moHinhDao.updateMoHinh(moHinh);
-                        CustomToast customToast = new CustomToast(DetailMoHinhActivity.this, CustomToast.SUCCESS, "Updated successfully!");
-                        customToast.showToast();
-                        setView();
-                        bottomSheetDialog.dismiss();
-                    }
-                });
-            }
-        });
 
         bottomSheetDialog.show();
     }
