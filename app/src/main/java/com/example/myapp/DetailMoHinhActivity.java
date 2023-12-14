@@ -33,11 +33,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String name = edtName.getText().toString();
-                        int price = Integer.parseInt(edtPrice.getText().toString());
-                        String material = edtMaterial.getText().toString();
-                        String ratio = edtRatio.getText().toString();
-                        int height = Integer.parseInt(edtHeight.getText().toString());
+                       er.parseInt(edtHeight.getText().toString());
                         String date = edtDate.getText().toString();
                         int age = Integer.parseInt(edtAgeLimit.getText().toString());
                         String origin = edtOrigin.getText().toString();
