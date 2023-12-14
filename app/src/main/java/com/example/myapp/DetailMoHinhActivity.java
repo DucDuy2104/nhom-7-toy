@@ -31,11 +31,7 @@ import java.util.Calendar;
 public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void setView() {
-
-                tvRatio.setText(moHinh.getTiLe());
-                tvHeight.setText(moHinh.getChieuCao() +"cm");
-                tvRemaining.setText((moHinh.getSoLuong() - moHinh.getSoLuongDaBan()) + "");
-                tvDate.setText(moHinh.getNgaySx());
+etText(moHinh.getNgaySx());
                 tvSex.setText(moHinh.getGioiTinh());
                 tvAgeLimit.setText(moHinh.getGioiHanDoTuoi()+"");
                 tvOrigin.setText(moHinh.getXuatXu());
