@@ -21,13 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HoaDonDao {
-
-    private void setDialog() {
-        progressDialog = new ProgressDialog(context);
-        progressDialog.setMessage("Loading...");
-        progressDialog.setCancelable(false);
-    }
-
     public  interface  OnGetListHoaDon {
         void onGetSuccess(List<HoaDon> hoaDonList);
     }
