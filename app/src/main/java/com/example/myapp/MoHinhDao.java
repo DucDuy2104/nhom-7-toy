@@ -24,12 +24,7 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
-    public void updateMoHinh(MoHinh moHinh) {
-        dbReference.child("mo_hinh_" + moHinh.getMaMh()).setValue(moHinh);
-    }
-
-    public void deleteMoHinh(int mamh) {
-        Log.e("ducduy", "deleteMoHinh: start" );
+    g.e("ducduy", "deleteMoHinh: start" );
 
         hoaDonDao = new HoaDonDao(context);
         hoaDonChiTietDao = new HoaDonChiTietDao(context);
