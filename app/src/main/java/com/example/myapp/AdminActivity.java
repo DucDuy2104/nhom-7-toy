@@ -31,16 +31,6 @@ import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
 
-    private void setView() {
-
-        //set first Fragment
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.frLayout_adminAct, new HomeAdminFragment())
-                .commit();
-
-    }
-
     private void setNavOnItemSelect() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
