@@ -30,11 +30,6 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-
-
-        bottomSheetDialog.show();
-    }
-
     private void setView() {
         moHinhDao.getMoHinhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
             @Override
