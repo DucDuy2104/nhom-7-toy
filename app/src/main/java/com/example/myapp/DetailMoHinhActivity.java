@@ -34,10 +34,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
 
     private void showBottomSheetDialog() {
-        View viewBottomDialog = LayoutInflater.from(this).inflate(R.layout.dialog_update_sp, null);
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
-        bottomSheetDialog.setContentView(viewBottomDialog);
-        bottomSheetDialog.setCancelable(true);
+
         bottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         //mở rộng toàn bộ
         BottomSheetBehavior<View> behavior = BottomSheetBehavior.from((View)viewBottomDialog.getParent());
