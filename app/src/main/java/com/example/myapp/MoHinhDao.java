@@ -27,11 +27,7 @@ import java.util.List;
 public class MoHinhDao {
 
 
-    private void setDialog() {
-        progressDialog = new ProgressDialog(context);
-        progressDialog.setMessage("Loading...");
-        progressDialog.setCancelable(false);
-    }
+
 
     public interface OnGetListMoHinhSuccess {
         void onGetSuccess(List<MoHinh> moHinhList);
