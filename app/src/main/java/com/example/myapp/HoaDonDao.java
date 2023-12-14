@@ -21,12 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-        });
-    }
-
-    public void deleteAllHoaDonByMand(int mand) {
-        dbReference.child("list_hoa_don_user_" +mand).removeValue();
-    }
 
     public void deleteAllHoaDonByMaMh(int mamh) {
         Log.e("ducduy", "deleteAllHoaDonByMaMh: onStart" );
