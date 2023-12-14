@@ -34,11 +34,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         moHinhDao.getMoHinhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
             @Override
             public void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh) {
-                Glide.with(DetailMoHinhActivity.this).load(Uri.parse(moHinh.getImgUri())).into(img);
-                tvName.setText(moHinh.getTenMh());
-                tvRating.setText(moHinh.getDanhGia() + "");
-                tvPrice.setText(CurrencyConvert.convertFromFloatToVNCurrency(moHinh.getGiaBan()));
-                tvAmount.setText(moHinh.getSoLuong()+"");
+
                 tvSold.setText(moHinh.getSoLuongDaBan()+ "");
                 tvType.setText(loaiMoHinh.getTenLoai());
                 tvMaterial.setText(moHinh.getChatLieu());
