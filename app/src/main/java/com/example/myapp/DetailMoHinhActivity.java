@@ -35,10 +35,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog() {
 
-        EditText edtName = viewBottomDialog.findViewById(R.id.edt_nameSpUpdateAdmin);
-        EditText edtPrice = viewBottomDialog.findViewById(R.id.edt_priceSpUpdateAdmin);
-        EditText edtMaterial = viewBottomDialog.findViewById(R.id.edt_materialSpUpadteAdmin);
-        EditText edtRatio = viewBottomDialog.findViewById(R.id.edt_ratioUpdateSpAdmin);
+        iewBottomDialog.findViewById(R.id.edt_ratioUpdateSpAdmin);
         EditText edtHeight = viewBottomDialog.findViewById(R.id.edt_heightUpdateSpAdmin);
         EditText edtDate = viewBottomDialog.findViewById(R.id.edt_dateUpdateSpAdmin);
         EditText edtAgeLimit = viewBottomDialog.findViewById(R.id.edt_ageUpdateSpAdmin);
