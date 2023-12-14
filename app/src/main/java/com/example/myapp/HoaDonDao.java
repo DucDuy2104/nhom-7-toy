@@ -22,17 +22,6 @@ import java.util.List;
 
 public class HoaDonDao {
 
-                .addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DataSnapshot> task) {
-                        List<HoaDon> hoaDonList =new ArrayList<>();
-                        for (DataSnapshot hdSnap: task.getResult().getChildren()){
-                            HoaDon hoaDon = hdSnap.getValue(HoaDon.class);
-                            hoaDonList.add(hoaDon);
-                        }
-                        onGetListHoaDon.onGetSuccess(hoaDonList);
-                    }
-                });
     }
 
     public void addHoaDon(HoaDon hoaDon){
