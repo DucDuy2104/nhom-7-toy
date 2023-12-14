@@ -22,13 +22,6 @@ import java.util.List;
 
 public class HoaDonDao {
 
-
-    public HoaDonDao(Context context) {
-        this.context=context;
-        this.dbReference = FirebaseDatabase.getInstance().getReference("list_hoa_don");
-        setDialog();
-    }
-
     private void setDialog() {
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading...");
