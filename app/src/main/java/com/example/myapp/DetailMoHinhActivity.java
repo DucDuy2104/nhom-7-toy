@@ -30,11 +30,6 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-    private void showDialogDelete(int maMh, String tenMh) {
-
-        dialog.show();
-    }
-
     private void showSubDialog(int maMh) {
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_error, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
