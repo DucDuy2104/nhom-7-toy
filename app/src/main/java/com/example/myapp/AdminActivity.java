@@ -30,14 +30,7 @@ import com.example.duanmau1.sign.SignInActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
-        initView();
-        setView();
-        setNavOnItemSelect();
-    }
+
 
     private void initView() {
         toolbar = findViewById(R.id.tb_adminAct);
