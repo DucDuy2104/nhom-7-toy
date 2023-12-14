@@ -36,16 +36,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
     private void showBottomSheetDialog()
 
 
-                        datePickerDialog.show();
-                    }
-                });
-
-                btnCancel.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        bottomSheetDialog.dismiss();
-                    }
-                });
 
 
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
