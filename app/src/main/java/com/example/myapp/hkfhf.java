@@ -271,14 +271,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         });
 
         btnConFirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                moHinhDao.deleteMoHinh(maMh);
-                CustomToast customToast = new CustomToast(DetailMoHinhActivity.this, CustomToast.SUCCESS, "Xóa thành công!");
-                customToast.showToast();
-                dialog.dismiss();
-                finish();
-            }
+
         });
         dialog.show();
     }
