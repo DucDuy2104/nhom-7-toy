@@ -25,17 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MoHinhDao {
-    pence storageReference;
-    private LoaiMoHinhDao loaiMoHinhDao;
-    private HoaDonChiTietDao hoaDonChiTietDao;
-    private HoaDonDao hoaDonDao;
-    private Context context;
-    public MoHinhDao(Context context) {
-        this.dbReference  = FirebaseDatabase.getInstance().getReference("list_mo_hinh");
-        this.storageReference =  FirebaseStorage.getInstance().getReference("list_img_mo_hinh");
-        this.context = context;
-        setDialog();
-    }
+
 
     private void setDialog() {
         progressDialog = new ProgressDialog(context);
