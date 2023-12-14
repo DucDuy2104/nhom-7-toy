@@ -35,13 +35,7 @@ public class AdminActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.home_drawerNav) {
-                    getSupportFragmentManager()
-                            .beginTransaction()
-                            .replace(R.id.frLayout_adminAct, new HomeAdminFragment())
-                            .commit();
-                    drawerLayout.close();
-                } else if (item.getItemId() == R.id.exit_drawerNav) {
+                 else if (item.getItemId() == R.id.exit_drawerNav) {
                     Intent intent = new Intent(AdminActivity.this, SignInActivity.class);
                     startActivity(intent);
                 } else if (item.getItemId() == R.id.changePass_drawerNav) {
