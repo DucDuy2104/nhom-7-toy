@@ -35,11 +35,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
     private void showBottomSheetDialog()
 
-                                // Thiết lập ngày mặc định khi mở dialog (năm, tháng, ngày)
-                                Calendar.getInstance().get(Calendar.YEAR),
-                                Calendar.getInstance().get(Calendar.MONTH),
-                                Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
-                        );
 
                         datePickerDialog.show();
                     }
