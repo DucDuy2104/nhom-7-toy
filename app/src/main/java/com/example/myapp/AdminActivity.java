@@ -32,7 +32,6 @@ import com.google.android.material.navigation.NavigationView;
 public class AdminActivity extends AppCompatActivity {
 
 
-    priviDungDao nguoiDungDao ;
     private  TextView tvName, tvEmail;
     private ImageView imgUser;
     @Override
