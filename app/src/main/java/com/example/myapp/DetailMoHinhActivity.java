@@ -33,10 +33,6 @@ public class DetailMoHinhActivity extends AppCompatActivity {
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       er.parseInt(edtHeight.getText().toString());
-                        String date = edtDate.getText().toString();
-                        int age = Integer.parseInt(edtAgeLimit.getText().toString());
-                        String origin = edtOrigin.getText().toString();
 
                         moHinh.setTenMh(name);
                         moHinh.setGiaBan(price);
