@@ -34,16 +34,7 @@ public class DetailMoHinhActivity extends AppCompatActivity {
 
 
     private void showBottomSheetDialog() {
-
-
-        moHinhDao.getMoHinhById(mamh, new MoHinhDao.OnGetMoHinhSuccess() {
-            @Override
-            public void onGetSuccess(MoHinh moHinh, LoaiMoHinh loaiMoHinh) {
-                edtName.setText(moHinh.getTenMh());
-                edtPrice.setText(moHinh.getGiaBan()+"");
-                edtMaterial.setText(moHinh.getChatLieu());
-                edtRatio.setText(moHinh.getTiLe());
-                edtHeight.setText(moHinh.getChieuCao()+"");
+        ext(moHinh.getChieuCao()+"");
                 edtDate.setText(moHinh.getNgaySx());
                 edtAgeLimit.setText(moHinh.getGioiHanDoTuoi()+"");
                 edtOrigin.setText(moHinh.getXuatXu());
