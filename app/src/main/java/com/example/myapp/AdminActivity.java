@@ -42,12 +42,6 @@ public class AdminActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
-        EditText edtPass = viewDialog.findViewById(R.id.edt_matKhauChangePass);
-        EditText edtNewPass = viewDialog.findViewById(R.id.edt_newMkChangePass);
-        EditText edtRePass = viewDialog.findViewById(R.id.edt_reNewMkChangePass);
-        Button btnCancel = viewDialog.findViewById(R.id.btn_huyChangePass);
-        Button btnOke = viewDialog.findViewById(R.id.btn_changePass);
-
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
