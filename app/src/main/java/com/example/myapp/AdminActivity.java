@@ -42,19 +42,6 @@ public class AdminActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
-
-        btnOke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
-
-        dialog.show();
-
-
     }
 
 
