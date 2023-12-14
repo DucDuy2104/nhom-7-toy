@@ -249,14 +249,3 @@ public class DetailMoHinhActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private void showSubDialog(int maMh) {
-        View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_error, null);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setView(viewDialog);
-        AlertDialog dialog = builder.create();
-
-        ImageButton btnCancel = viewDialog.findViewById(R.id.btn_closeErrorDialog);
-        Button btnConFirm = viewDialog.findViewById(R.id.btn_conFirmErrorDialog);
-        Text
-
-}
