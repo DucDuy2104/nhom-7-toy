@@ -30,10 +30,7 @@ import java.util.Calendar;
 
 public class DetailMoHinhActivity extends AppCompatActivity {
 
-    int mamh;
-    MoHinhDao moHinhDao;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    ndle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_mo_hinh);
         getData();
